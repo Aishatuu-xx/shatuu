@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Payment & Inquiry</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+  <header class="header">
+    <img src="img/logo1.png" alt="Hospital Logo" width="80">
+    <h1>Welcome to Shatuu medics</h1>
+    <p>Your health is our priority.</p>
+  </header>
+
+  <main class="container">
+    <section class="payment-section">
+      <h2>Make a Payment</h2>
+      <form class="payment-form" action="#" method="POST">
+        <label for="patient-name">Patient Name:</label>
+        <input type="text" id="patient-name" name="patient-name" placeholder="Enter patient name" required>
+
+        <label for="patient-id">Patient ID:</label>
+        <input type="text" id="patient-id" name="patient-id" placeholder="Enter patient ID" required>
+
+        <label for="amount">Payment Amount:</label>
+        <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" placeholder="Enter card number" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+
+        <button type="submit">Submit Payment</button>
+      </form>
+    </section>
+
+    <section class="inquiry-section">
+      <h2>Send an Inquiry</h2>
+      <form class="inquiry-form" action="#" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+        <button type="submit">Send Inquiry</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Contact us: +1 234 567 890 | info@hospital.com</p>
+    <p>&copy; 2024 [Hospital Name]. All rights reserved.</p>
+  </footer>
+</body>
+</html>

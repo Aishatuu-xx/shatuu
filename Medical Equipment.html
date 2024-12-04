@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Equipment Store</title>
+    <link rel="stylesheet" href="Medical Equipment.css">
+</head>
+<body>
+    <!-- Header -->
+
+
+    <header class="header">
+        <div class="container">
+            <img src="img/logo1.png" alt="Hospital Logo" width="80">
+            <h1>Medical Equipment Store</h1>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <section class="products-section">
+        <div class="container">
+            <h2>Available Products</h2>
+            <div class="products">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="img/sethoscope.jpg" alt="Stethoscope">
+                    <h3>Stethoscope</h3>
+                    <p>$50</p>
+                    <button class="add-to-cart" data-name="Stethoscope" data-price="50">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product">
+                    <img src="img/bloodpressure.jpg" alt="BP Monitor">
+                    <h3>Blood Pressure Monitor</h3>
+                    <p>$80</p>
+                    <button class="add-to-cart" data-name="Blood Pressure Monitor" data-price="80">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product">
+                    <img src="img/wheel chair.jpg" alt="Wheelchair">
+                    <h3>Wheelchair</h3>
+                    <p>$200</p>
+                    <button class="add-to-cart" data-name="Wheelchair" data-price="200">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <div class="cart">
+                <ul class="cart-items"></ul>
+                <div class="cart-summary">
+                    <p>Total: $<span class="cart-total">0</span></p>
+                    <button class="checkout">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="container">
+            <h2>Payment</h2>
+            <form id="payment-form">
+                <label for="card-holder-name">Card Holder Name</label>
+                <input type="text" id="card-holder-name" placeholder="John Doe" required>
+
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY" required>
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="123" required>
+
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="Medical Equipment.js"></script>
+</body>
+</html>
